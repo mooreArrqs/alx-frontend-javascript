@@ -6,10 +6,12 @@ describe('getListStudents', () => {
   const students = getListStudents();
   expect(students).toHaveLength(3);
 
-  expect(students).toStrictEqual();
+  expect(students).toEqual(
   expect.arrayContaining([
     expect.objectContaining({ id: 1, firstName: 'Guillaume', location: 'San Francisco' }),
     expect.objectContaining({ id: 2, firstName: 'James', location: 'Columbia' }),
   expect.objectContaining({ id: 5, firstName: 'Serena', location: 'San Francisco' }),
-    ]);
+    ])
+   );
+  });
 });
